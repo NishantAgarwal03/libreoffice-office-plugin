@@ -1,0 +1,14 @@
+{
+  "id": "calc_fill_blanks",
+  "name": "Fill blanks",
+  "version": "1.0",
+  "class": "CalcFillBlanksFeature",
+  "description": "Fill empty cells with the value above (or to the left): for reports exported with merged-looking group headers. Real merged cells can be unmerged and filled. Only blank cells are written; formats and other cells are untouched.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Fill Blanks...", "icon": "calc_fill_blanks/fill_blanks",
+     "group": "calc-data", "order": 140, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

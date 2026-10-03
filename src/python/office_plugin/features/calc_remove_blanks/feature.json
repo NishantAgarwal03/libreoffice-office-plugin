@@ -1,0 +1,14 @@
+{
+  "id": "calc_remove_blanks",
+  "name": "Remove blanks",
+  "version": "1.0",
+  "class": "CalcRemoveBlanksFeature",
+  "description": "Remove blank rows, blank columns or blank cells from the selection (a lone cell means the whole used area). Cells below/right of the selection move up/left; optionally delete whole sheet rows/columns. Shows counts and asks before changing anything.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Remove Blanks...", "icon": "calc_remove_blanks/remove_blanks",
+     "group": "calc-data", "order": 130, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

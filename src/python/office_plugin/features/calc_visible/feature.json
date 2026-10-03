@@ -1,0 +1,14 @@
+{
+  "id": "calc_visible",
+  "name": "Select visible cells only",
+  "version": "1.0",
+  "class": "CalcVisibleFeature",
+  "description": "Alt+; narrows the selection to cells that are not hidden or filtered out (Excel behaviour), so copy/format skips hidden rows and columns.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Select", "label": "Select Visible Cells Only", "icon": "calc_visible/select_visible",
+     "group": "calc-data", "order": 100, "toolbar": true, "menu": true,
+     "accelerator": {"calc": "Alt+;"}}
+  ]
+}

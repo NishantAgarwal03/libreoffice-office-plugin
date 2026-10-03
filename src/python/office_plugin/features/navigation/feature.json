@@ -1,0 +1,17 @@
+{
+  "id": "navigation",
+  "name": "Back / Forward navigation",
+  "version": "1.0",
+  "class": "NavigationFeature",
+  "description": "Alt+Left / Alt+Right: return to where you were before following a hyperlink or making a big jump (Word/Excel/PowerPoint behaviour).",
+  "apps": ["writer", "calc", "impress", "draw"],
+  "requires": ["positions", "doc_utils"],
+  "commands": [
+    {"name": "Back", "label": "Back", "icon": "navigation/back",
+     "group": "navigation", "order": 10, "toolbar": true, "menu": true,
+     "accelerator": {"all": "Alt+Left"}},
+    {"name": "Forward", "label": "Forward", "icon": "navigation/forward",
+     "group": "navigation", "order": 11, "toolbar": true, "menu": true,
+     "accelerator": {"all": "Alt+Right"}}
+  ]
+}

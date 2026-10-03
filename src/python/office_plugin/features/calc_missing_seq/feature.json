@@ -1,0 +1,14 @@
+{
+  "id": "calc_missing_seq",
+  "name": "Find missing sequence numbers",
+  "version": "1.0",
+  "class": "CalcMissingSeqFeature",
+  "description": "Find gaps in a numbered column (plain numbers or text like INV-0012, zero padding kept) and insert a placeholder row for every missing number, in place, so holes in a register become visible. Duplicates and out-of-order numbers are reported, never changed. Shows the gap list and asks before inserting.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Find Missing Numbers...", "icon": "calc_missing_seq/missing_seq",
+     "group": "calc-data", "order": 160, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

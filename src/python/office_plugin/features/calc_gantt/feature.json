@@ -1,0 +1,17 @@
+{
+  "id": "calc_gantt",
+  "name": "Gantt chart",
+  "version": "1.0",
+  "class": "CalcGanttFeature",
+  "description": "Draws a Gantt chart next to a task table: a timeline of day/week/month columns whose bars are live conditional-format rules (move a date and the bar moves), with progress shading from a % complete column, milestones (zero duration) and finish-to-start dependencies that schedule the start dates. Run it again to recalculate; Remove Gantt clears the timeline.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Gantt Chart...", "icon": "calc_gantt/gantt",
+     "group": "calc-planning", "order": 300, "toolbar": true, "menu": true,
+     "accelerator": null},
+    {"name": "Remove", "label": "Remove Gantt", "icon": "calc_gantt/remove_gantt",
+     "group": "calc-planning", "order": 310, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "calc_transpose",
+  "name": "Transpose table",
+  "version": "1.0",
+  "class": "CalcTransposeFeature",
+  "description": "Turn a table's rows into columns (and columns into rows): in place, onto a new sheet, or at a cell. Uses LibreOffice's own Copy + Paste Special > Transpose, so formulas keep working, formats and merged cells carry over; optionally converts formulas to values. Warns before overwriting cells outside the table.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Transpose Table...", "icon": "calc_transpose/transpose",
+     "group": "calc-data", "order": 125, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

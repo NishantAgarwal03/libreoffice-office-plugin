@@ -1,0 +1,14 @@
+{
+  "id": "calc_dedupe",
+  "name": "Remove duplicates",
+  "version": "1.0",
+  "class": "CalcDedupeFeature",
+  "description": "Remove duplicate rows from the selected range, comparing the columns you choose; the first occurrence is kept (Excel behaviour).",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Remove Duplicates...", "icon": "calc_dedupe/dedupe",
+     "group": "calc-data", "order": 110, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

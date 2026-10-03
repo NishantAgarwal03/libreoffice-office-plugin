@@ -1,0 +1,14 @@
+{
+  "id": "calc_functions",
+  "name": "Number functions",
+  "version": "1.0",
+  "class": "CalcFunctionsFeature",
+  "description": "Adds live cell functions =NUMTOWORDS(number; [system]; [currency]; [letters]), =WORDSTONUM(text) and =UNITSTONUM(text) by installing a small generated Basic module in your My Macros > Standard library (opt-in; Disable removes it). The functions call this plugin's number logic.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Manage", "label": "Number Functions...", "icon": "calc_functions/functions",
+     "group": "calc-numbers", "order": 440, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "my_feature",
+  "name": "My feature",
+  "version": "1.0",
+  "class": "MyFeature",
+  "description": "One sentence on what this does for the user.",
+  "apps": ["writer", "calc"],
+  "requires": ["doc_utils"],
+  "commands": [
+    {"name": "Run", "label": "Do My Thing", "icon": "my_feature/my_thing",
+     "group": "my-group", "order": 500, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

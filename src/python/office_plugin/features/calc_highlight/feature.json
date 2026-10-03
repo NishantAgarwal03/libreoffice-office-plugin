@@ -1,0 +1,18 @@
+{
+  "id": "calc_highlight",
+  "name": "Highlight duplicates / differences",
+  "version": "1.0",
+  "class": "CalcHighlightFeature",
+  "description": "Colour cells instead of deleting or copying: duplicates in a list, unique values, rows of A that are (not) in B, or cell-by-cell differences between two ranges. Uses the same matching and cleaning options as Compare Lists. 'Clear Highlight' removes only the colours this tool applied.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Highlight Duplicates / Differences...", "tooltip": "Highlight Duplicates / Differences",
+     "icon": "calc_highlight/highlight",
+     "group": "calc-compare", "order": 200, "toolbar": true, "menu": true,
+     "accelerator": null},
+    {"name": "Clear", "label": "Clear Highlight", "icon": "calc_highlight/clear_highlight",
+     "group": "calc-compare", "order": 210, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

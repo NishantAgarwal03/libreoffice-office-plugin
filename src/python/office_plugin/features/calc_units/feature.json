@@ -1,0 +1,14 @@
+{
+  "id": "calc_units",
+  "name": "Units to numbers",
+  "version": "1.0",
+  "class": "CalcUnitsFeature",
+  "description": "Turn amounts written with unit letters or words into numbers: 1 lakh, 1L, 2 cr, 2cr, 1.5k, 3M, Rs. 2 crore, 12,34,567, 1 crore 25 lakh. Results go to the next column or in place; unreadable cells are listed.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Units to Numbers...", "icon": "calc_units/units",
+     "group": "calc-numbers", "order": 430, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

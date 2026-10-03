@@ -1,0 +1,14 @@
+{
+  "id": "last_edit",
+  "name": "Go to last edit",
+  "version": "1.0",
+  "class": "LastEditFeature",
+  "description": "Cycle through the last three places you edited (Word's Shift+F5). Default key is Alt+F5 because Shift+F5 is already bound in Writer/Calc/Impress.",
+  "apps": ["writer", "calc"],
+  "requires": ["positions", "doc_utils"],
+  "commands": [
+    {"name": "GoTo", "label": "Go to Last Edit", "icon": "last_edit/last_edit",
+     "group": "navigation", "order": 20, "toolbar": true, "menu": true,
+     "accelerator": {"writer": "Alt+F5", "calc": "Alt+F5"}}
+  ]
+}

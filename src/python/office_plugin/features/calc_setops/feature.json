@@ -1,0 +1,14 @@
+{
+  "id": "calc_setops",
+  "name": "Compare lists (union / intersection / difference)",
+  "version": "1.0",
+  "class": "CalcSetopsFeature",
+  "description": "Compare two lists: union, intersection, A minus B, B minus A, symmetric difference. Rows are matched on columns you choose, with optional cleaning (spaces, case, invisible characters, numbers vs numeric text). The result goes to a new sheet; your data is never touched.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Compare Lists...", "icon": "calc_setops/setops",
+     "group": "calc-data", "order": 120, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

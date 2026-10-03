@@ -1,0 +1,14 @@
+{
+  "id": "calc_decimals",
+  "name": "Set decimals",
+  "version": "1.0",
+  "class": "CalcDecimalsFeature",
+  "description": "Give every selected number the same number of decimals: values are rounded, formulas stay formulas wrapped in ROUND (an existing outer ROUND is replaced, never nested), and the cells display exactly that many decimals. Round / round up / round down; can also remove the ROUND wrapper again.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Set Decimals...", "icon": "calc_decimals/decimals",
+     "group": "calc-numbers", "order": 400, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

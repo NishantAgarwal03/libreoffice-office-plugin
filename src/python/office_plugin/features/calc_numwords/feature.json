@@ -1,0 +1,17 @@
+{
+  "id": "calc_numwords",
+  "name": "Number to words / words to number",
+  "version": "1.0",
+  "class": "CalcNumWordsFeature",
+  "description": "Number to Words: Indian (lakh, crore) or international (million, billion) wording with negatives, decimals and currency (Rupees/Paise, Dollars/Cents...). Words to Number: reads both systems back, including 'Rupees ... and Paise ... Only'. Results go to the next column or in place; unreadable cells are listed.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "ToWords", "label": "Number to Words...", "icon": "calc_numwords/to_words",
+     "group": "calc-numbers", "order": 410, "toolbar": true, "menu": true,
+     "accelerator": null},
+    {"name": "FromWords", "label": "Words to Number...", "icon": "calc_numwords/from_words",
+     "group": "calc-numbers", "order": 420, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}

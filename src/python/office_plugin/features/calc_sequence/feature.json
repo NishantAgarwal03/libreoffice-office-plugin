@@ -1,0 +1,14 @@
+{
+  "id": "calc_sequence",
+  "name": "Sequence numbering",
+  "version": "1.0",
+  "class": "CalcSequenceFeature",
+  "description": "Fill a number series from Start, Step, End and Count (any sufficient combination, or the selection size), down or across, ascending or descending. Decimal steps are exact. Warns before overwriting cells beyond the selection.",
+  "apps": ["calc"],
+  "requires": ["doc_utils", "ui"],
+  "commands": [
+    {"name": "Run", "label": "Sequence Numbers...", "icon": "calc_sequence/sequence",
+     "group": "calc-data", "order": 150, "toolbar": true, "menu": true,
+     "accelerator": null}
+  ]
+}
